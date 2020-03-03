@@ -206,6 +206,7 @@ def main():
                 sess,
                 os.path.join(CHECKPOINT_DIR, args.run_name, 'model'),
                 global_step=counter)
+            tf.saved_model.save(model, 'tmp/tfmodel')
             with open(counter_path, 'w') as fp:
                 fp.write(str(counter) + '\n')
 
