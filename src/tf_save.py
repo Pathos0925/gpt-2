@@ -16,10 +16,7 @@ def interact_model(
     :model_name=345M : String, which model to use    
     """
     
-    enc = encoder.get_encoder(model_name)
-    hparams = model.default_hparams()
-    with open(os.path.join('models', model_name, 'hparams.json')) as f:
-        hparams.override_from_dict(json.load(f))
+    enc = encoder.get_encoder(model_name)    
     tf.saved_model.save(enc, 'tmp/tfmodel')
         
 
