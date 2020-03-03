@@ -13,7 +13,7 @@ def interact_model(
 ):
     """
     Interactively run the model
-    :model_name=117M : String, which model to use    
+    :model_name=345M : String, which model to use    
     """
     
     enc = encoder.get_encoder(model_name)
