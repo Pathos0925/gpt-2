@@ -9,7 +9,7 @@ import tensorflow as tf
 import model, sample, encoder
 
 def interact_model(
-    model_name='117M'    
+    model_name='345M'    
 ):
     """
     Interactively run the model
